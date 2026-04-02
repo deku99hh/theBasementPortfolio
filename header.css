@@ -1,0 +1,108 @@
+header {
+    background-color: #4288ff;
+    background-image: linear-gradient(to right, #4288ff, rgb(19, 105, 255));
+
+    height: 3.6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 44px;
+}
+
+.part_of_the_header {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    /* font-family: "mangaFont", Arial, Helvetica, sans-serif; */
+
+    gap: 0.4rem;
+}
+
+
+
+
+@font-face {
+  font-family: mangaFont;
+  src: url(CCWildWords_Bold_Italic.ttf) format("truetype");
+}
+
+.left_part_of_the_header {
+    padding: 4px 0;
+}
+
+.left_part_of_the_header #logo {
+    height: 73%;
+    padding-bottom: 6px;
+}
+
+.left_part_of_the_header h3 {
+    font-family: "mangaFont", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+.write_part_of_the_header{
+    height: 100%;
+    /* gap: 10px; */
+    position: relative;
+}
+
+.write_part_of_the_header a{
+    text-decoration: none;
+    height: 100%;
+
+    /* position: relative; */
+    
+    display: grid;
+    place-items: center;
+
+    /* top: 50%; */
+    /* display: table-cell;
+    vertical-align: middle; */
+    padding: 0 10px;
+    transition: all linear 0.1s;
+    position: relative;
+
+}
+
+@keyframes slide-in {
+  0% { width: 0; opacity: 0; }
+  100%   { width: 50px; opacity: 1; }
+}
+
+.write_part_of_the_header a:hover {
+    background-color: #74a7ff;
+    /* border-bottom: black 3px solid; */
+    /* animation: slide-in 0.2s; */
+    
+}
+.write_part_of_the_header a:hover::after {
+    background-color: #000000; 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    
+    width: 50px; opacity: 1;
+    animation: slide-in 0.2s;
+}
+
+/* .write_part_of_the_header a:hover::after {
+    content: "";
+    width: 100%;
+    border: black 1px;
+    position: static;
+} */

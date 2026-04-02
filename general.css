@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0a111b;
+}
+
+body {
+    background-color: #d2cfdd;
+    overflow-x: hidden;
+}
