@@ -3,10 +3,10 @@ footer {
     background-color: #04050d;
     background-image: linear-gradient(to right, #04050d, #212121);
     padding: 70px 0;
-    
     color: aliceblue;
-
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .centerd_links {
@@ -27,13 +27,6 @@ footer {
 .centerd_links a:hover {
     color: aliceblue;
 }
-
-
-
-
-
-
-
 
 
 
@@ -104,4 +97,23 @@ footer {
     background-color: #a82c2e;
     padding: 7px 0;
     transform: rotate(-45deg);
+}
+
+
+@media (max-width: 670px) {
+    footer{
+        align-items: center;
+    }
+    footer .centerd_links { 
+        /* display: none !important; */
+        width: 65%;
+        flex-wrap: wrap;
+    }
+    footer p {
+        width: 100%;
+    }
+
+    .cornar{
+        left: -125px;
+    }
 }

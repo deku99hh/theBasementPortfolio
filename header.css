@@ -110,3 +110,15 @@ header {
     border: black 1px;
     position: static;
 } */
+
+@media (max-width: 670px) {
+    .write_part_of_the_header a { 
+        display: none !important;
+    }
+    main img{
+        display: none;
+    }
+    main{
+        padding-top: 32rem;
+    }
+}
