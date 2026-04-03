@@ -30,5 +30,5 @@ body {
 
 @font-face {
   font-family: mangaFont;
-  src: url(/assets/CCWildWords_Bold_Italic.ttf) format("truetype");
+  src: url(assets/CCWildWords_Bold_Italic.ttf) format("truetype");
 }
