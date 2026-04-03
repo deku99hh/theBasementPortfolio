@@ -1,4 +1,4 @@
-header {
+/* header {
     background-color: #4288ff;
     background-image: linear-gradient(to right, #4288ff, rgb(19, 105, 255));
 
@@ -14,7 +14,24 @@ header {
     position: fixed;
     box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.3);
 
+} */
+header {
+    background-color: #4288ff;
+    background-image: linear-gradient(to right, #4288ff, rgb(19, 105, 255));
+    height: 3.6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7% 0 8%;
+    /* width: calc(91% - 85px); */
+    width: 85vw;
+    position: fixed;
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.3);
 }
+
+
 
 .part_of_the_header {
     height: 100%;
@@ -59,6 +76,7 @@ header {
     height: 100%;
     /* gap: 10px; */
     position: relative;
+    font-weight: bold;
 }
 
 .write_part_of_the_header a{
@@ -119,7 +137,13 @@ header {
         display: none;
     }
     main{
-        padding-top: 32rem;
+        padding-bottom: 32rem;
+        transition: all 0.2s;
+
+    }
+    body:has(input[type="checkbox"]:checked) main{
+        padding-top: 20rem;
+        transition: all 0.2s;
     }
 
 
@@ -144,19 +168,21 @@ header {
     }
 
     input[type="checkbox"]:checked{
-        background: url(https://www.svgrepo.com/show/521564/close.svg) no-repeat;
+        /* background: url(https://www.svgrepo.com/show/521564/close.svg) no-repeat; */
         background-size: 100%;
 
     }
 
-    input[type="checkbox"]:checked ~ .mobileNav{
-        opacity: 100%;
+    input[type="checkbox"]:checked ~ .mobileNav {
+        /* opacity: 100%; */
         transition: 0.2s;
-
         pointer-events: auto;
+        top: calc(5rem - 3px);
+        height: 15rem;
+        /* font-size: 0; */
     }
 
-    .mobileNav {
+    /* .mobileNav {
         top: 0;
         left: 0;
 
@@ -167,7 +193,6 @@ header {
         background-image: linear-gradient(to right, #c82121, #811212);
 
         height: 100vh;
-        /* height: 100%; */
         width: 100%;
         margin-top: -20px;
         position: fixed;
@@ -186,6 +211,33 @@ header {
         pointer-events: none;
 
         overflow: hidden;
+    } */
+
+    .mobileNav {
+        top: -45rem;
+        left: 0;
+        z-index: 1111111111111111;
+        padding-top: 25px;
+        display: flex !important;
+        background-color: #4187ff;
+        background-image: linear-gradient(to bottom right, #4187ff, #032766);
+        height: 100vh;
+        /* height: 100%; */
+        width: 100%;
+        margin-top: -20px;
+        position: fixed;
+        opacity: 100%;
+        /* opacity: 0; */
+        transition: 0.2s;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 50px;
+        overflow: scroll;
+        overflow-y: auto;
+        z-index: 98;
+        -webkit-overflow-scrolling: touch;
+        pointer-events: none;
+        overflow: hidden;
     }
 
     .mobileNav img {
@@ -203,7 +255,7 @@ header {
     .linkBlockA a {
         color: white !important;
         font-weight: 600;
-        font-size: 37px;
+        font-size: 21px;
     }
     .linkBlockA a span {
         font-size: 11px;

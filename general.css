@@ -11,8 +11,10 @@ body {
 
 main {
     padding-top: 57px;
+    display: flex;
+    padding: 57px 5%;
+    justify-content: space-between;
 }
-
 
 
 @media (max-width: 670px) {
