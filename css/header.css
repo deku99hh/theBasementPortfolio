@@ -29,6 +29,7 @@ header {
     width: 85vw;
     position: fixed;
     box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.3);
+    z-index: 888888;
 }
 
 
@@ -50,10 +51,6 @@ header {
 
 
 
-@font-face {
-  font-family: mangaFont;
-  src: url(CCWildWords_Bold_Italic.ttf) format("truetype");
-}
 
 .left_part_of_the_header {
     padding: 4px 0;
@@ -134,7 +131,7 @@ header {
         display: none !important;
     } */
     main img{
-        display: none;
+        /* display: none; */
     }
     main{
         padding-bottom: 32rem;
@@ -256,6 +253,8 @@ header {
         color: white !important;
         font-weight: 600;
         font-size: 21px;
+
+        text-decoration: none;
     }
     .linkBlockA a span {
         font-size: 11px;

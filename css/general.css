@@ -7,14 +7,10 @@
 body {
     /* background-color: #d2cfdd; */
     overflow-x: hidden;
+    background-image: url(../assets/example.jpg);
+    background-size: 27rem;
 }
 
-main {
-    padding-top: 57px;
-    display: flex;
-    padding: 57px 5%;
-    justify-content: space-between;
-}
 
 
 @media (max-width: 670px) {
@@ -30,4 +26,9 @@ main {
 }
 .mobile {
     display: none;
+}
+
+@font-face {
+  font-family: mangaFont;
+  src: url(/assets/CCWildWords_Bold_Italic.ttf) format("truetype");
 }
