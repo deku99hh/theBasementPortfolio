@@ -10,6 +10,10 @@ body {
     background-image: url(../assets/example.jpg);
     background-size: 27rem;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 
